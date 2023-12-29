@@ -1,0 +1,8 @@
+{
+  "name": "Функциональное питание для котов Кэт энерджи",
+  "short_name": "Кэт энерджи",
+  "icons": [
+    { "src": "favicons/192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "favicons/512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

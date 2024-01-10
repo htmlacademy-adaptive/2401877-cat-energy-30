@@ -9,7 +9,7 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/index.js" defer="defer"></script>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -68,7 +68,7 @@
               <ul class="form__radios">
                 <li class="form__radios-item">
                   <label class="form__radio">
-                    <input class="form__radio-input" type="radio" name="program-type" value="weight-loss" checked>
+                    <input class="form__radio-input" type="radio" name="program-type" value="weight-loss" checked="checked">
                     <span class="form__radio-label">Похудение</span>
                   </label>
                 </li>
@@ -100,14 +100,14 @@
             <fieldset class="form__group">
               <legend class="form__subtitle">Комментарий</legend>
                 <label class="visually-hidden" for="program-form-comments">Дополнительная информация о коте.</label>
-                <textarea class="form__textarea" id="comments" name="program-form-comments" placeholder="Расскажите обо всех повадках кота">
+                <textarea class="form__textarea" id="program-form-comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form__group">
               <legend class="form__subtitle">Дополнительно</legend>
                 <ul class="form__checkboxes">
                   <li class="form__checkboxes-item">
                     <label class="form__checkbox">
-                      <input class="form__checkbox-input" type="checkbox" name="sweetener" checked>
+                      <input class="form__checkbox-input" type="checkbox" name="sweetener" checked="checked">
                       <span class="form__checkbox-label">Сахарозаменитель</span>
                     </label>
                   </li>
@@ -145,8 +145,8 @@
           <p class="contacts__text">Санкт-Петербург</p>
         </div>
         <picture>
-          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png, images/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x" width="768" height="400">
           <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Местоположение компании на карте.">
         </picture>
       </section>

@@ -1,19 +1,49 @@
 .socials {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  padding-left: 20px;
+  }
 }
 
-/*
+
 .socials__item {
 
 }
 
 .socials__item-link {
+  min-width: 28px;
+  min-height: 22px;
+  color: $icon-color-grey;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: rgba($bg-basic-green, 0.3);
+  }
+}
+
+.socials__item-icon {
 
 }
-*/
 
-.socials__item-link svg {
-  fill: #666666;
-}
 
 

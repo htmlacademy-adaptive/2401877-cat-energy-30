@@ -3,7 +3,10 @@
 }
 
 .catalog__title {
-
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  color: $secondary-color-text;
 }
 
 .catalog__container {
@@ -11,7 +14,7 @@
 }
 
 .catalog__list {
-
+  list-style-type: none;
 }
 
 .catalog__item {

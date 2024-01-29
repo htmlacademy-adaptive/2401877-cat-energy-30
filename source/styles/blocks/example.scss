@@ -1,56 +1,205 @@
 .example {
-  background-color: #eaeaea;
+  background-color: $bg-accent-grey;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, #ffffff calc(55% + 5px), #ffffff 48%, #eaeaea 150px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, transparent 135px, transparent 135px, #f2f2f2 135px);
+    background-color: transparent;
+  }
 }
 
 .example__container {
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  padding-left: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 45px 15px 85px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr 2fr;
+    aspect-ratio: 240/77;
+    padding: 0;
+  }
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $secondary-color-text;
+  margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin: 0 0 146px;
+  }
 }
 
 .example__text {
-  font-size: 14px;
-  line-height: 18px;
+  margin: 0;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin-bottom: 69px;
+    padding: 0;
+    margin-right: 178px;
+  }
+}
+
+.example__statistics-wrapper {
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-column: 1/2;
+    padding: 0;
+    margin-bottom: 75px;
+  }
 }
 
 .example__statistics {
+  display: flex;
+  gap: 31px;
+  margin: 0;
+  margin-bottom: 36px;
 
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+    margin-bottom: 55px;
+  }
 }
 
 .example__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+  min-width: 124px;
+  min-height: 56px;
 
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 77px;
+  }
 }
 
 .example__statistics-subtitle {
-  font-size: 12px;
-  line-height: 12px;
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 24px;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__statistics-text {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  color: #000000;
-  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  position: absolute;
+  bottom: -15px;
+  text-align: center;
+  margin: 0;
+  background-color: $bg-accent-grey;
+  width: 77px;
+
+  @media (min-width: $tablet-width) {
+    bottom: -6px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $bg-color-primary;
+    box-shadow: 5px 0 0 0 $bg-color-primary, -5px 0 0 0 $bg-color-primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 125px;
+    background-color: $bg-basic-grey;
+    box-shadow: 5px 0 0 0 $bg-basic-grey, -5px 0 0 0 $bg-basic-grey;
+  }
 }
 
 .example__cost {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 20px;
+  margin-right: 9px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 66px;
+  }
 }
 
 .example__cost-text {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: $secondary-color-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
 }
 
 .example__slider {
+  @media (min-width: $tablet-width) {
+    transform: translate(74px, -16px);
+  }
 
+  @media (min-width: $desktop-width) {
+    transform: translate(40px, 2px);
+  }
 }

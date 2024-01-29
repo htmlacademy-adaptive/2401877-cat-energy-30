@@ -1,4 +1,10 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Lato", sans-serif;
-  color: $base-color-text;
+  font-family: $font-primary;
+  color: $primary-color-text;
 }

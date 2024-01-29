@@ -1,19 +1,21 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button--primary {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: $accent-color-text;
   background-color: $bg-basic-green;
 }
 
 .button--secondary {
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: $secondary-color-text;
+  background-color: $bg-basic-grey;
 }

@@ -1,19 +1,18 @@
 .copyright {
   text-decoration: none;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+    padding: 0;
+  }
+
 }
 
 .copyright__text {
   font-size: 16px;
   line-height: 20px;
-  color: $base-color-text;
+  color: $primary-color-text;
+  margin: 0;
 }
 
-/*
-.copyright__logo {
-
-}
-*/
-
-.copyright svg {
-  fill: #666666;
-}

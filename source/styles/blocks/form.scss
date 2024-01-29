@@ -1,0 +1,114 @@
+.form {
+
+}
+
+.form__fieldset {
+
+}
+
+.form__group {
+
+}
+
+.form__subtitle {
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 26px;
+  color: $secondary-color-text;
+}
+
+.form__label {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+}
+
+.form__input {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+}
+
+.form__input--email {
+
+}
+
+.form__input--phone {
+
+}
+
+.form__radios {
+  list-style-type: none;
+}
+
+.form__radios-item {
+
+}
+
+.form__radio {
+
+}
+
+.form__radio-input {
+
+}
+
+.form__radio-label {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+}
+
+.form__checkboxes {
+  list-style-type: none;
+}
+
+.form__checkboxes-item {
+
+}
+
+.form__checkbox {
+
+}
+
+.form__checkbox-input {
+
+}
+
+.form__checkbox-label {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+}
+
+.form__bottom {
+
+}
+
+.form__button {
+
+}
+
+.form__remark {
+  .form__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    color: $secondary-color-text;
+  }
+}

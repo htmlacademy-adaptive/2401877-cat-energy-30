@@ -12,6 +12,7 @@
 
 .catalog__title {
   font-family: $font-secondary;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $secondary-color-text;
@@ -33,7 +34,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-gap: 60px;
   }
 }
 
@@ -44,13 +45,5 @@
   @media (min-width: $tablet-width) {
     border: none;
     max-width: 324px;
-
-    &:nth-child(odd) .product-card__image{
-      transform: translateY(-46px);
-    }
-
-    &:nth-child(even) .product-card__image{
-      transform: translateY(-81px);
-    }
   }
 }

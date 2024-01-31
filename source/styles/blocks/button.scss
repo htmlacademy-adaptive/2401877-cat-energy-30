@@ -12,6 +12,16 @@
   text-align: center;
   color: $accent-color-text;
   background-color: $bg-basic-green;
+
+  &:hover {
+    background-color: #5EAA2F;
+    color: $accent-color-text;
+  }
+
+  &:active {
+    background-color: #5EAA2F;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--secondary {

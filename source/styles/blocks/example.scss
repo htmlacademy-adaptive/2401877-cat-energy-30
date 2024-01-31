@@ -26,12 +26,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr 2fr;
     aspect-ratio: 240/77;
-    padding: 0;
+    padding: 0 30px;
   }
 }
 
 .example__title {
   font-family: $font-secondary;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $secondary-color-text;

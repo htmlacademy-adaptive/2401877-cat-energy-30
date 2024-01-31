@@ -1,5 +1,13 @@
-.catalog {
+.catalog__container {
+  padding-top: 27px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .catalog__title {
@@ -7,16 +15,23 @@
   font-size: 36px;
   line-height: 36px;
   color: $secondary-color-text;
-}
+  margin-top: 0;
+  margin-bottom: 41px;
 
-.catalog__container {
-
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+  }
 }
 
 .catalog__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog__item {
-
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }

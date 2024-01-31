@@ -39,7 +39,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 153px;
+    gap: 37px 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,7 +67,8 @@
     justify-items: start;
     gap: 20px;
     min-height: 280px;
-    min-width: 230px;
+    max-width: 249px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +79,8 @@
 .benefits__item::before {
   content: "";
   display: block;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $bg-basic-green;
   background-size: 60px 60px;
   width: 154px;
@@ -95,7 +98,6 @@
 }
 
 .benefits__item::after {
-
   @media (min-width: $tablet-width) {
     counter-increment: benefits-counter;
     content: counter(benefits-counter);
@@ -107,82 +109,40 @@
     text-align: center;
     font-size: 280px;
     line-height: 280px;
+    position: absolute;
+    top: -37px;
+    left: 8px;
+    top: -37px;
+    left: 4px;
+    right: 8px;
+    z-index: -1;
   }
 }
 
-.benefits__item--leaf::after {
-  content: "";
-  position: absolute;
-  mask-image: url("../../images/icons/stack.svg#leaf-icon");
+.benefits__item--leaf::before {
+  background-image: url("../../images/icons/stack.svg#leaf-icon");
   background-size: 25px 28px;
-  width: 25px;
-  height: 28px;
-  top: 16px;
-  left: 18px;
-  background-color: $bg-color-primary;
-
-  @media (min-width: $tablet-width) {
-    top: 24px;
-    left: -74px;
-  }
 }
 
-.benefits__item--powder::after {
-  content: "";
-  position: absolute;
-  mask-image: url("../../images/icons/stack.svg#powder-icon");
+.benefits__item--powder::before {
+  background-image: url("../../images/icons/stack.svg#powder-icon");
   background-size: 26px 29px;
-  width: 26px;
-  height: 29px;
-  top: 96px;
-  left: 18px;
-  background-color: $bg-color-primary;
-
-  @media (min-width: $tablet-width) {
-    top: 24px;
-    left: -74px;
-  }
 }
 
-.benefits__item--eat::after {
-  content: "";
-  position: absolute;
-  mask-image: url("../../images/icons/stack.svg#eat-icon");
+.benefits__item--eat::before {
+  background-image: url("../../images/icons/stack.svg#eat-icon");
   background-size: 25px 30px;
-  width: 25px;
-  height: 30px;
-  top: 175px;
-  left: 18px;
-  background-color: $bg-color-primary;
-
-  @media (min-width: $tablet-width) {
-    top: 26px;
-    left: -74px;
-  }
 }
 
-.benefits__item--time::after {
-  content: "";
-  position: absolute;
-  mask-image: url("../../images/icons/stack.svg#time-icon");
+.benefits__item--time::before {
+  background-image: url("../../images/icons/stack.svg#time-icon");
   background-size: 26px 31px;
-  width: 26px;
-  height: 31px;
-  top: 255px;
-  left: 18px;
-  background-color: $bg-color-primary;
-
-  @media (min-width: $tablet-width) {
-    top: 24px;
-    left: -74px;
-  }
 }
 
 .benefits__item-text {
   font-size: 14px;
   line-height: 18px;
   margin: 0;
-  max-width: 200px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

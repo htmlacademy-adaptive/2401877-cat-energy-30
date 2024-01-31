@@ -3,6 +3,11 @@
   padding-top: 0;
 }
 
+.contacts--accent {
+  background-color: $bg-basic-grey;
+}
+
+
 .contacts__container {
   background-color: $bg-color-primary;
   display: flex;
@@ -29,6 +34,10 @@
     padding-right: 76px;
     padding-left: 79px;
   }
+}
+
+.contacts__container--accent {
+  background-color: $bg-basic-grey;
 }
 
 .contacts__title {

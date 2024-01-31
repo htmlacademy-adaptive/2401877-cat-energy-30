@@ -150,10 +150,10 @@
     line-height: 14px;
     background-color: $bg-color-primary;
     box-shadow: 5px 0 0 0 $bg-color-primary, -5px 0 0 0 $bg-color-primary;
+    width: fit-content;
   }
 
   @media (min-width: $desktop-width) {
-    width: 125px;
     background-color: $bg-basic-grey;
     box-shadow: 5px 0 0 0 $bg-basic-grey, -5px 0 0 0 $bg-basic-grey;
   }

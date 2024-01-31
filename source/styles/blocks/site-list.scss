@@ -69,6 +69,12 @@
   }
 }
 
+.site-list__link--alternate {
+  @media (min-width: $desktop-width) {
+    color: $additional-color-text;
+  }
+}
+
 .site-list__link--current {
   @media (min-width: $tablet-width) {
     &::after {
@@ -88,6 +94,21 @@
       position: absolute;
       content: "";
       background-color: $bg-color-primary;
+      left: 0;
+      right: 0;
+      top: 48px;
+      bottom: 0;
+      height: 2px;
+    }
+  }
+}
+
+.site-list__link--current-alternate {
+  @media (min-width: $desktop-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $bg-basic-green;
       left: 0;
       right: 0;
       top: 48px;

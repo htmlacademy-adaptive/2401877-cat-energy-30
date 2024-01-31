@@ -21,11 +21,28 @@
 .extra__item {
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .extra-card {
   padding-top: 13px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px 39px;
+  }
+}
+
+.extra-card__wrapper {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
 }
 
 .extra-card__title {
@@ -36,20 +53,38 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+    font-size: 20px;
+    margin: 0;
+  }
 }
 
 .extra-card__description {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    gap: 49px;
+    margin: 0;
+  }
 }
 
 .extra-card__text {
   font-size: 14px;
   line-height: 14px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .extra-card__button {
-
+  @media (min-width: $tablet-width) {
+    padding: 10px 285px;
+  }
 }

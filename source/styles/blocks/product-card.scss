@@ -5,6 +5,19 @@
 
   @media (min-width: $tablet-width) {
     background-color: $bg-basic-grey;
+    display: flex;
+    flex-direction: column;
+    padding: 0 37px 40px 37px;
+    margin-top: 81px;
+    min-height: 430px;
+  }
+}
+
+.product-card--more {
+  @media (min-width: $tablet-width) {
+    background-color: $bg-color-primary;
+    border: 2px solid $bg-basic-grey;
+    padding: 50px 37px 40px 37px;
   }
 }
 
@@ -13,6 +26,12 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
 }
 
 .product-card__image {
@@ -28,24 +47,49 @@
   text-transform: uppercase;
   margin: 0;
   margin-right: 64px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 55px 20px;
+  }
+}
+
+.product-card__title--more {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 55px 23px;
+  }
 }
 
 .product-card__description {
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.product-card__description--more {
+  text-align: center;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 20px 82px;
+  }
 }
 
 .product-card__description-item {
   display: flex;
   justify-content: space-between;
-}
-
-.product-card__description-subtitle {
-
-}
-
-.product-card__description-text {
-
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 5px;
 }
 
 .product-card__button {
@@ -55,6 +99,10 @@
 
 .product-card__button--more {
   padding: 10px 94px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 78px;
+  }
 }
 
 .product-card__plus {
@@ -72,15 +120,25 @@
     width: 30px;
     height: 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../images/icons/stack.svg#plus-icon");
+      background-size: 60px 60px;
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
 
-.product-card__title--more {
-  text-align: center;
-  margin: 0;
-  margin-bottom: 8px;
-}
 
-.product-card__description--more {
-  text-align: center;
-  margin-bottom: 21px;
-}
+
+

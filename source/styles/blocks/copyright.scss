@@ -16,3 +16,14 @@
   margin: 0;
 }
 
+.copyright svg {
+  color: $icon-color-grey;
+
+  &:hover {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: rgba($bg-basic-green, 0.3);
+  }
+}

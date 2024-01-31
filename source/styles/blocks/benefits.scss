@@ -10,12 +10,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 126px;
+    padding-bottom: 69px;
   }
 }
 
 .benefits__title {
   font-family: $font-secondary;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $secondary-color-text;

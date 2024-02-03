@@ -1,6 +1,23 @@
 .extra__container {
   padding-top: 25px;
   padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+  }
+}
+
+.extra__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    padding-bottom: 87px;
+  }
 }
 
 .extra__title {
@@ -26,6 +43,12 @@
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .extra-card {
@@ -34,6 +57,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 17px;
   }
 }
 
@@ -44,32 +75,47 @@
     justify-content: space-between;
     margin-bottom: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    margin-right: 40px;
+  }
 }
 
 .extra-card__title {
   font-family: $font-secondary;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: $special-color-text;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 13px;
 
   @media (min-width: $tablet-width) {
     line-height: 20px;
     font-size: 20px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 325px;
+  }
 }
 
 .extra-card__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     gap: 49px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
   }
 }
 
@@ -88,4 +134,10 @@
   @media (min-width: $tablet-width) {
     padding: 10px 285px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 91px;
+  }
 }
+
+/*добавить большим кнопкам padding 10 10 и width 100%   */

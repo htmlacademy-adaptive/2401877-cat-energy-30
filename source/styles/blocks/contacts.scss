@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 27px;
   padding-top: 26px;
   padding-bottom: 26px;
 
@@ -31,8 +31,7 @@
     width: 565px;
     min-height: 199px;
     background-color: $bg-color-primary;
-    padding-right: 76px;
-    padding-left: 79px;
+    padding: 60px 78px 60px 80px;
   }
 }
 
@@ -41,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: $bg-color-primary;
+    padding: 60px 74px 60px 80px;
   }
 }
 
@@ -59,11 +59,16 @@
   color: $secondary-color-text;
   text-transform: uppercase;
   max-width: min-content;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
     margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

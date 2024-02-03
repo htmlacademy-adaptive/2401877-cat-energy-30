@@ -2,7 +2,7 @@
   font-family: $font-secondary;
   color: $accent-color-text;
   position: relative;
-  padding-bottom: 82px;
+
 
   &::before {
     position: absolute;
@@ -28,7 +28,7 @@
       background-position: 0;
       background-size: 1041px 694px;
       min-width: 50%;
-      min-height: calc(100% + 52px);
+      min-height: calc(100% + -2px);
       z-index: -1;
     }
   }
@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 28px;
+    padding-bottom: 82px;
   }
 }
 

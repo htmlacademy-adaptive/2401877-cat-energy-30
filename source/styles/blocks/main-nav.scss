@@ -1,8 +1,11 @@
 .main-nav {
   display: flex;
   flex-wrap: wrap;
-}
 
+  @media (min-width: $tablet-width) {
+    max-width: 62%;
+  }
+}
 
 .main-nav__toggle {
   border: none;
@@ -37,9 +40,24 @@
   height: 24px;
 }
 
-@media (max-width: $mobile-width) {
-  .main-nav--closed .site-list__item {
+
+
+.main-nav--nojs {
+  & .main-nav__toggle {
     display: none;
+  }
+
+  & .main-nav__wrapper {
+    @media (max-width: 767px) {
+      display: block;
+      position: static;
+    }
+  }
+
+  & .nav__list {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 }
 

@@ -8,3 +8,7 @@ body {
   font-family: $font-primary;
   color: $primary-color-text;
 }
+
+svg {
+  fill: currentColor;
+}

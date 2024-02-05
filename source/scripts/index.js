@@ -1,8 +1,9 @@
-/* в этот файл добавляет скрипты*/
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
+let contacts = document.querySelector('.contacts');
 
 navMain.classList.remove('main-nav--nojs');
+contacts.classList.remove('contacts--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
@@ -13,3 +14,4 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+

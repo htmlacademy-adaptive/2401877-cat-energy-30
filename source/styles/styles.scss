@@ -4,6 +4,7 @@
 @import "./global/fonts.scss";
 @import "./global/global.scss";
 @import "./global/common.scss";
+@import "./global/title-decoration.scss";
 @import "./global/visually-hidden.scss";
 
 /* BLOCKS */
@@ -22,11 +23,9 @@
 @import "./blocks/main-footer.scss";
 @import "./blocks/socials.scss";
 @import "./blocks/copyright.scss";
-@import "./blocks/main-catalog.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/extra.scss";
 @import "./blocks/offer.scss";
-@import "./blocks/main-form.scss";
 @import "./blocks/program.scss";
 @import "./blocks/form.scss";

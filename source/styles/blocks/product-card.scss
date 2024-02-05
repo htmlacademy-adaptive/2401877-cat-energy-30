@@ -29,14 +29,11 @@
     background-color: $bg-color-primary;
     background-image: none;
     border: 2px solid $bg-basic-grey;
-    margin-top: 82px;
-    max-height: 429px;
+    height: 100%;
     padding: 48px 35px 38px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 80px;
-    max-height: 431px;
     padding: 48px 36px 38px 36px;
   }
 }
@@ -115,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 40px 11px 26px;
+    margin: 0 11px 26px;
   }
 }
 
@@ -222,7 +219,7 @@
     width: 60px;
     height: 60px;
     position: relative;
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
 
     &::after {
       position: absolute;

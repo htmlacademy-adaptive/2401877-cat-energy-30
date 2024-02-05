@@ -28,6 +28,12 @@
   color: $secondary-color-text;
   margin-top: 0;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+  }
 }
 
 .extra__list {
@@ -131,6 +137,7 @@
 }
 
 .extra-card__button {
+
   @media (min-width: $tablet-width) {
     padding: 10px 285px;
   }
@@ -140,4 +147,3 @@
   }
 }
 
-/*добавить большим кнопкам padding 10 10 и width 100%   */

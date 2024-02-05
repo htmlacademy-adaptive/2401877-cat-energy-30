@@ -56,3 +56,9 @@
     padding: 0;
   }
 }
+
+.catalog__item--more {
+  @media (min-width: $tablet-width) {
+    margin-top: 81px;
+  }
+}

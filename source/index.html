@@ -9,6 +9,8 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswald-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <script src="scripts/index.js" defer="defer"></script>
   </head>
   <body class="page__body">
@@ -26,7 +28,7 @@
             </svg>
           </div>
         </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
@@ -153,7 +155,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--nojs">
         <div class="page__container">
           <div class="contacts__container">
             <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
@@ -164,8 +166,7 @@
           </div>
         </div>
         <div class="contacts__map-wrapper">
-          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a715c1f35c078e6f79de537b0385908f8f14a5a8d2957c170a17eb8df522bfa&amp;source=constructor"
-            width="320" height="362" allowfullscreen="" frameborder="0" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a715c1f35c078e6f79de537b0385908f8f14a5a8d2957c170a17eb8df522bfa&amp;source=constructor" width="320" height="362" allowfullscreen="" frameborder="0" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         </div>
         <noscript>
           <picture>

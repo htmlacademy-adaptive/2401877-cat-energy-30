@@ -9,6 +9,8 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswald-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <script src="scripts/index.js" defer="defer"></script>
   </head>
   <body class="page__body">
@@ -26,7 +28,7 @@
             </svg>
           </div>
         </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -46,70 +48,74 @@
         </nav>
       </div>
     </header>
-    <main class="main-container main-form">
+    <main class="main-container">
       <section class="program">
-        <div class="program__container">
+        <div class="program__container page__container">
           <header class="program__header">
             <h1 class="program__title">Подбор программы</h1>
             <p class="program__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </header>
           <form class="program__form form" id="program-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="form__fieldset">
-              <legend class="visually-hidden">Основная информация о коте.</legend>
-              <div class="form__group">
-                <label class="form__label" for="program-form-cat-name">Имя:*</label>
-                <input class="form__input" type="text" id="program-form-cat-name" name="name" placeholder="Барсик" required>
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="program-form-cat-weight">Вес (кг):*</label>
-                <input class="form__input" type="number" id="program-form-cat-weight" name="weight" placeholder="7" required>
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="program-form-cat-age">Возраст (лет):</label>
-                <input class="form__input" type="number" id="program-form-cat-age" name="age" placeholder="7" required>
+            <div class="form__container">
+              <fieldset class="form__fieldset form__fieldset--main">
+                <legend class="visually-hidden">Основная информация о коте.</legend>
+                <div class="form__group">
+                  <label class="form__label" for="program-form-cat-name">Имя:*</label>
+                  <input class="form__input" type="text" id="program-form-cat-name" name="name" placeholder="Барсик" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="program-form-cat-weight">Вес (кг):*</label>
+                  <input class="form__input" type="number" id="program-form-cat-weight" name="weight" placeholder="7" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="program-form-cat-age">Возраст (лет):</label>
+                  <input class="form__input" type="number" id="program-form-cat-age" name="age" placeholder="7" required>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--radio">
+                <legend class="visually-hidden">Тип программы питания.</legend>
+                <ul class="form__radios">
+                  <li class="form__radios-item">
+                    <label class="form__radio">
+                      <input class="form__radio-input" type="radio" name="program-type" value="weight-loss" checked="checked">
+                      <span class="form__radio-label">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="form__radios-item">
+                    <label class="form__radio">
+                      <input class="form__radio-input" type="radio" name="program-type" value="weight-gain">
+                      <span class="form__radio-label">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="form__radios-item">
+                    <label class="form__radio">
+                      <input class="form__radio-input" type="radio" name="program-type" value="need-help">
+                      <span class="form__radio-label">Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <fieldset class="form__fieldset form__fieldset--contacts">
+              <legend class="form__subtitle title-decoration">Контактные данные (владельца кота)</legend>
+              <div class="form__wrapper">
+                <div class="form__group">
+                  <label class="form__label" for="program-form-email">E-mail:*</label>
+                  <input class="form__input form__input--email" type="email" id="program-form-email" name="email" placeholder="кuklachev@gmail.com" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="program-form-phone">Телефон:*</label>
+                  <input class="form__input form__input--phone" type="tel" id="program-form-phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                </div>
               </div>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="visually-hidden">Тип программы питания.</legend>
-              <ul class="form__radios">
-                <li class="form__radios-item">
-                  <label class="form__radio">
-                    <input class="form__radio-input" type="radio" name="program-type" value="weight-loss" checked="checked">
-                    <span class="form__radio-label">Похудение</span>
-                  </label>
-                </li>
-                <li class="form__radios-item">
-                  <label class="form__radio">
-                    <input class="form__radio-input" type="radio" name="program-type" value="weight-gain">
-                    <span class="form__radio-label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="form__radios-item">
-                  <label class="form__radio">
-                    <input class="form__radio-input" type="radio" name="program-type" value="need-help">
-                    <span class="form__radio-label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
-              <div class="form__group">
-                <label class="form__label" for="program-form-email">E-mail:*</label>
-                <input class="form__input form__input--email" type="email" id="program-form-email" name="email" placeholder="кuklachev@gmail.com" required>
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="program-form-phone">Телефон:*</label>
-                <input class="form__input form__input--phone" type="tel" id="program-form-phone" name="phone" placeholder="8 (960) 900-60-90" required>
-              </div>
-            </fieldset>
-            <fieldset class="form__group">
-              <legend class="form__subtitle">Комментарий</legend>
+            <fieldset class="form__fieldset form__fieldset--textarea">
+              <legend class="form__subtitle title-decoration">Комментарий</legend>
                 <label class="visually-hidden" for="program-form-comments">Дополнительная информация о коте.</label>
                 <textarea class="form__textarea" id="program-form-comments" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="form__group">
-              <legend class="form__subtitle">Дополнительно</legend>
+            <fieldset class="form__fieldset form__fieldset--checkbox">
+              <legend class="form__subtitle title-decoration">Дополнительно</legend>
                 <ul class="form__checkboxes">
                   <li class="form__checkboxes-item">
                     <label class="form__checkbox">
@@ -138,13 +144,13 @@
                 </ul>
             </fieldset>
             <div class="form__bottom">
-              <button class="form__button button button--primary" type="submit">отправить заявку</button>
+              <button class="form__button button button--primary" type="submit">Отправить заявку</button>
               <p class="form__remark">* — Обязательные поля</p>
             </div>
           </form>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--accent contacts--nojs">
         <div class="page__container">
           <div class="contacts__container">
             <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
@@ -155,8 +161,7 @@
           </div>
         </div>
         <div class="contacts__map-wrapper">
-          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a715c1f35c078e6f79de537b0385908f8f14a5a8d2957c170a17eb8df522bfa&amp;source=constructor"
-            width="320" height="362" allowfullscreen="" frameborder="0" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a715c1f35c078e6f79de537b0385908f8f14a5a8d2957c170a17eb8df522bfa&amp;source=constructor" width="320" height="362" allowfullscreen="" frameborder="0" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         </div>
         <noscript>
           <picture>
